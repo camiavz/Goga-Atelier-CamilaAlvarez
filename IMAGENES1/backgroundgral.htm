@@ -1,0 +1,615 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8" />
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,n=[],t=!1,r=[],s=[],o=!0,a=function(e,i,t,r,s,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=r,this.blockedBy=s,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),l.isInitialized=!0,l.isComplete=!0,f("... func.apply: "+e);var i=l.funcName.split("."),t=null;i.length>3||(t=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=t&&t.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete n[e],!0===l.isBlock&&(f("----- F'D: "+l.name),m())}},l=function(e,i,n,t,r,s,o){var a=this;this.name=e,this.path=i,this.async=r,this.defer=s,this.isBlock=n,this.blockedBy=t,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.process=function(){a.isInitialized=!0,f("... file = "+e);var n=document.createElement("script");n.src=i,!0===r?n.async=!0:!0===s&&(n.defer=!0),n.onerror=function(){f("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&m()},n.onreadystatechange=n.onload=function(){var e=n.readyState;f("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&m())},document.getElementsByTagName("head")[0].appendChild(n)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===t)return f(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var r=e.blockedBy[i];if(!1===n.hasOwnProperty(r))return f(e.name+" blocked = "+r),!0;if(!0===e.proceedIfError&&!0===n[r].isError)return!1;if(!1===n[r].isComplete)return f(e.name+" blocked = "+r),!0}return!1}function f(e){var i=window.location.href,n=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(n?n[1]:null)&&console.debug(e)}function m(){++e>200||(f("let's go"),u(r),u(s))}function u(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var n=e[i];!0===n.isComplete||h(n)||!0===n.isInitialized||!0===n.isError?!0===n.isError?f(n.name+": error"):!0===n.isComplete?f(n.name+": complete already"):!0===n.isInitialized&&f(n.name+": initialized already"):n.process()}}return window.addEventListener("load",(function(){setTimeout((function(){t=!0,f("TDELAY -----"),m()}),5e3)}),!1),{addFile:function(e,i,t,o,a,c,h,f){var m=new l(e,i,t,o,a,c,h);!0===f?r[e]=m:s[e]=m,n[e]=m,d(m)},addDelayFile:function(e,i){var t=new l(e,i,!1,[],!1,!1,!0);t.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),s[e]=t,n[e]=t,d(t)},addFunc:function(e,t,o,l,c,h,f,m,u){!0===h&&(e=e+"_"+i++);var p=new a(e,t,o,l,c,f,m);!0===u?r[e]=p:s[e]=p,n[e]=p,d(p)},addDelayFunc:function(e,i,t){var r=new a(e,i,t,!1,[],!0,!0);r.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),s[e]=r,n[e]=r,d(r)},items:n,processAll:m,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in n){var i=n[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else n[e]=new c(e,!0);f("markLoaded dummyfile: "+n[e].name)}},logWhatsBlocked:function(){for(var e in n)!1!==n.hasOwnProperty(e)&&h(n[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<base href="https://www.freejpg.com.ar/public/" />
+<title>✅ Imagen de Fondo de tela de lino blanco impecable Fotografía de Stock</title>
+<meta name="description" content="Descargue la imágen de Fondo de tela de lino blanco impecable.✅ Encontre más imágenes de alta resolución banco de fotos disponible para descargar fácilmente." />
+<meta property="og:title" content="🔥 Imagen de Fondo de tela de lino blanco impecable" />
+<meta property="og:image" content=" https://media.istockphoto.com/photos/seamless-white-linen-canvas-background-picture-id879838070?b=1&amp;k=6&amp;m=879838070&amp;s=612x612&amp;w=0&amp;h=_5PCe_-v2vmyuciq679sR3pADKmCGHLZbd9ya4xv-hk=" />
+<meta property="og:site_name" content="FreeJpg" />
+<meta property="og:description" content="Fondo de tela de lino blanco impecable" />
+<meta name="twitter:title" content="🔥 Imagen de Fondo de tela de lino blanco impecable" />
+<meta name="twitter:description" content="Fondo de tela de lino blanco impecable" />
+<link rel="canonical" href="https://www.freejpg.com.ar/imagenes/premium/879838070/fondo-de-tela-de-lino-blanco-impecable" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@freejpg" />
+<meta name="twitter:creator" content="@freejpg" />
+<meta name="twitter:domain" content="https://www.freejpg.com.ar" />
+<meta name="twitter:image:src" content=" https://media.istockphoto.com/photos/seamless-white-linen-canvas-background-picture-id879838070?b=1&amp;k=6&amp;m=879838070&amp;s=612x612&amp;w=0&amp;h=_5PCe_-v2vmyuciq679sR3pADKmCGHLZbd9ya4xv-hk=" />
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/main2018.css" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<style>
+.st_plusone_buttons iframe, .st_fblike_buttons iframe, .addthis_toolbox iframe, .socialize-in-content iframe  {
+padding:0px !important;
+background: none;
+border: none;
+box-shadow: none;
+}
+
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices, .stButton .stButton_gradient {
+height:auto !important;
+}
+
+.at-custom-sidebar-counter {
+	display:block!important;
+	
+}
+
+.buttonjops {
+
+
+    display: block;
+    padding: 10px 30px;
+    border: medium none;
+    background: none repeat scroll 0% 0% transparent;
+    color: inherit;
+    vertical-align: middle;
+	text-align:center;
+    z-index: 1;
+	background-color:#8dc63f;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:18px;
+	
+	float:right;
+	
+}
+
+.buttonjops:hover{
+	color:#fff;
+	background-color:#6C1;
+	
+}
+
+rownew34:before,
+    rownew34:after {
+        content: "";
+        display: table;
+    }
+    .rownew34:after {
+        clear: both;
+    }
+    .item2 {
+      float: left;
+      margin-bottom: 15px; 
+    }
+    .item2 img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: bottom;
+    }
+    .first-item2 {
+      clear: both;
+    }
+    /* remove margin bottom on last row */
+    .last-row, .last-row ~ .item2 {
+      margin-bottom: 0;
+    }
+
+
+
+rownew33:before,
+    rownew33:after {
+        content: "";
+        display: table;
+    }
+    .rownew33:after {
+        clear: both;
+    }
+    .item {
+      float: left;
+      margin-bottom: 15px; 
+    }
+    .item img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: bottom;
+    }
+    .first-item {
+      clear: both;
+    }
+    /* remove margin bottom on last row */
+    .last-row, .last-row ~ .item {
+      margin-bottom: 0;
+    }
+	
+	
+	
+	.twittervisible {
+		position: static!important; visibility: visible!important; width: 64px!important; height: 20px!important;
+	}
+	
+
+</style>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "2dbdcf44-952d-47c6-ac34-1ab662dcd609", doNotHash: true, doNotCopy: true, hashAddressBar: false,shorten:false});</script>
+<script type="text/javascript" src="//services.vlitag.com/adv1/?q=646bc9fe40d31b9e6b87baf4e109b2a0" defer="" async=""></script><script> var vitag = vitag || {};</script>
+<script type="text/javascript">var ezouid = "1";</script><script type='text/javascript'>
+var ezoTemplate = 'old_site_noads';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script>
+<script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 254252;
+var ezdomain = 'freejpg.com.ar';
+var ezoicSearchable = 1;
+</script>
+
+
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Buenos Aires","country":"AR","days_since_last_visit":-1,"domain_id":254252,"engaged_time_visit":0,"ezcache_level":1,"ezcache_skip_code":11,"form_factor_id":1,"framework_id":1,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"7a4d4036-505f-41dd-62fb-78b4697630bb","position_selection_id":0,"postal_code":"1871","pv_event_count":0,"response_size_orig":51860,"response_time_orig":272,"serverid":"52.67.52.246:10178","state":"C","t_epoch":1661013877,"template_id":120,"time_on_site_visit":0,"url":"https://www.freejpg.com.ar/imagenes/premium/879838070/fondo-de-tela-de-lino-blanco-impecable","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":367,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_254252=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["7a4d4036-505f-41dd-62fb-78b4697630bb", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+<script type="text/javascript">var _audins_dom="freejpg_com_ar",_audins_did=254252;__ez.queue.addFile('/detroitchicago/cmbv2.js', '/detroitchicago/cmbv2.js?gcb=195-0&cb=04-3y02-8y06-13y07-2y19-7y0b-6y0d-21y13-4y17-5y1c-4y21-3y2f-4y57-2&cmbcb=97&sj=x04x02x06x07x19x0bx0dx13x17x1cx21x2fx57&abt=MultiplexNatives', true, [], true, false, true, false);</script>
+<script type="text/javascript" defer>__ez.queue.addFile('/detroitchicago/cmbdv2.js', '/detroitchicago/cmbdv2.js?gcb=195-0&cb=03-8y0c-6y18-5&cmbcb=97&sj=x03x0cx18&abt=MultiplexNatives', true, ['/detroitchicago/cmbv2.js'], true, false, true, false);</script></head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" style="background-color:#1a1a1a">
+<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<section class="introSearch2">
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2255515,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<style>
+
+  .navbar {
+	  padding: 0px 15px!important;
+  }
+
+</style><div>
+<nav class="navbar navbar-inverse navbar-top" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.freejpg.com.ar" title="Banco de Imágenes Gratis"><img src="img/logos_min.png" title="Banco de Imágenes Gratis Freejpg" alt="El mejor Banco de Imágenes Gratis es español Freejpg" /></a>
+</div>
+
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+<ul class="nav navbar-nav navbar-right" style="font-size:12px; text-transform:uppercase">
+<li class="">
+<a id="" href="https://www.freejpg.com.ar/videos" style="font-weight:bold; color:#9CF">Videos</a>
+</li>
+<li class="">
+<a id="" href="https://1010clipart.com" style="font-weight:bold;" target="_blank">ClipArt</a>
+</li>
+<li class="">
+<a id="" href="https://www.freejpg.com.ar/blog">Blog</a>
+</li>
+<li class="dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Premium <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"> <li><a title="Premium Imágenes de  amor" href="https://www.freejpg.com.ar/imagenes/premium?q=amor"><strong> Amor</strong> </a></li> <li><a title="Premium Imágenes de  animales" href="https://www.freejpg.com.ar/imagenes/premium?q=animales"><strong> Animales</strong> </a></li> <li><a title="Premium Imágenes de  arquitectura" href="https://www.freejpg.com.ar/imagenes/premium?q=arquitectura"><strong> Arquitectura</strong> </a></li> <li><a title="Premium Imágenes de  belleza/moda" href="https://www.freejpg.com.ar/imagenes/premium?q=moda"><strong> Belleza/Moda</strong> </a></li> <li><a title="Premium Imágenes de  ciencia/tecnologia" href="https://www.freejpg.com.ar/imagenes/premium?q=tecnologia"><strong> Ciencia/Tecnologia</strong> </a></li> <li><a title="Premium Imágenes de  comidas y bebidas" href="https://www.freejpg.com.ar/imagenes/premium?q=comidas"><strong> Comidas y Bebidas</strong> </a></li> <li><a title="Premium Imágenes de  deportes" href="https://www.freejpg.com.ar/imagenes/premium?q=deportes"><strong> Deportes</strong> </a></li> <li><a title="Premium Imágenes de  educacion" href="https://www.freejpg.com.ar/imagenes/premium?q=educacion"><strong> Educacion</strong> </a></li> <li><a title="Premium Imágenes de  emociones" href="https://www.freejpg.com.ar/imagenes/premium?q=emociones"><strong> Emociones</strong> </a></li> <li><a title="Premium Imágenes de  fondos de pantalla hd" href="https://www.freejpg.com.ar/imagenes/premium?q=fondos-de-pantalla-hd"><strong> Fondos de Pantalla HD</strong> </a></li> <li><a title="Premium Imágenes de  gente / personas" href="https://www.freejpg.com.ar/imagenes/premium?q=personas"><strong> Gente / Personas</strong> </a></li> <li><a title="Premium Imágenes de  industria" href="https://www.freejpg.com.ar/imagenes/premium?q=industria"><strong> Industria</strong> </a></li> <li><a title="Premium Imágenes de  lugares/monumentos" href="https://www.freejpg.com.ar/imagenes/premium?q=monumento"><strong> Lugares/Monumentos</strong> </a></li> <li><a title="Premium Imágenes de  musica" href="https://www.freejpg.com.ar/imagenes/premium?q=musica"><strong> Musica</strong> </a></li> <li><a title="Premium Imágenes de  negocios/finanzas" href="https://www.freejpg.com.ar/imagenes/premium?q=negocios"><strong> Negocios/Finanzas</strong> </a></li> <li><a title="Premium Imágenes de  nuevas" href="https://www.freejpg.com.ar/imagenes/premium?q="><strong> Nuevas</strong> </a></li> <li><a title="Premium Imágenes de  paisajes" href="https://www.freejpg.com.ar/imagenes/premium?q=paisajes"><strong> Paisajes</strong> </a></li> <li><a title="Premium Imágenes de  religion" href="https://www.freejpg.com.ar/imagenes/premium?q=religion"><strong> Religion</strong> </a></li> <li><a title="Premium Imágenes de  salud y medicina" href="https://www.freejpg.com.ar/imagenes/premium?q=medicina"><strong> Salud y Medicina</strong> </a></li> <li><a title="Premium Imágenes de  terror" href="https://www.freejpg.com.ar/imagenes/premium?q=terror"><strong> Terror</strong> </a></li> <li><a title="Premium Imágenes de  texture" href="https://www.freejpg.com.ar/imagenes/premium?q=texturas"><strong> Texture</strong> </a></li> <li><a title="Premium Imágenes de  viajes/vacaciones" href="https://www.freejpg.com.ar/imagenes/premium?q=vacaciones"><strong> Viajes/Vacaciones</strong> </a></li> <li><a title="Premium Imágenes de  fondos de pantalla 4k" href="https://www.freejpg.com.ar/imagenes/premium?q=fondos-de-pantalla-4k"><strong> fondos de Pantalla 4k</strong> </a></li> <li><a title="Premium Imágenes de  " href="https://www.freejpg.com.ar/imagenes/premium?q="><strong> </strong> </a></li> <li><a title="Premium Imágenes de  " href="https://www.freejpg.com.ar/imagenes/premium?q="><strong> </strong> </a></li> </ul> </li> <li class="">
+<a id="menu-toggle" href="javascript:;" data-toggle="modal" data-target="#contribuirModal">Contribuir</a>
+</li>
+<li class="" style="display:1">
+<a id="menu-toggle" href="https://www.freejpg.com.ar/imagenes/premium" data-toggle="modal">Premium</a>
+</li>
+<li class="" style="display:none">
+<a id="menu-toggle" href="javascript:;" data-toggle="modal" data-target="#newsletterModal">Newsletter</a>
+</li>
+<li class="" style="display:none">
+<a id="menu-toggle" href="https://www.freejpg.com.ar/contacto" data-toggle="modal">Contacto</a>
+</li>
+<li class="">
+<a id="menu-toggle" href="javascript:;" data-toggle="modal" style="padding-right:0px"> <img src="img/idioma3.png" width="75px" height="21px" border="0" usemap="#Map2" />
+<map name="Map2" id="Map2">
+<area shape="rect" coords="2,3,26,25" href="https://en.freejpg.com.ar/stockphotos/premium/" /> <area shape="rect" coords="27,3,59,22" href="https://www.freejpg.com.ar/imagenes/premium/" /> <area shape="rect" coords="57,3,75,22" href="https://br.freejpg.com.ar/imagens/premium/" />
+</map>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div id="divsearch" class="intro-body2" style="margin-top:0px; background-color:#f1f1f1;">
+<div class="container">
+<div class="row" style="">
+<div class="page-scroll" style="margin-bottom:10px; text-align:center; margin:0 auto;">
+<form id="formSearch" accept-charset="UTF-8" action="https://www.freejpg.com.ar/imagenes/gratis/" class="small_form2" method="get" style="text-align:center; margin-bottom:10px; margin-top:10px">
+<input class="inputSearchHome" name="criterio" placeholder="Comienza a buscar Ahora..." type="text" style="color:#666; border-radius:50px; height:40px; font-size:14px; padding-left:20px!important;" /><input class="btnSearchHome" name="" value="" type="submit" style="background-image: url(img/iconsearch.png); border: solid 0px #000000; background-color:Transparent !important; width:20px; height:20px; margin-top:10px;		" />
+</form>
+</div>
+</div>
+</div>
+</div>
+<section id="searchresult" class="content-section" style="background-color:#fff; padding-top:0px">
+<div class="searchresult-section" style="background-color:#fff">
+<div class="container-fluid" style="color:#999">
+<div class="row page-header" style="margin:0px; border:none; text-align:center; margin:10px 0;">
+</div>
+<div class="row">
+<div class="col-md-9">
+<div class="col-md-12" style="padding-right:25px; text-align:center">
+<div style="text-align:center; border-bottom:1px solid #f1f1f1">
+<div class="container-fluid" <div="" class="col-md-12" style="margin-bottom:20px; text-align:center">
+<div class="adsbyvli" style="width:980px; height:90px" data-ad-slot="vi_2211094225"></div> <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_2211094225") })</script>
+</div></div>
+<a href="https://photostockeditor.com/goistock?u=https://www.istockphoto.com/photo/seamless-white-linen-canvas-background-gm879838070-245198989" target="_blank" rel="nofollow">
+<img alt="Fondo de tela de lino blanco impecable" style="max-width:100%" src="https://media.istockphoto.com/photos/seamless-white-linen-canvas-background-picture-id879838070?s=2048x2048" />
+</a>
+<p>Seamless white canvas</p>
+</div>
+<div class="schema" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+<meta content="Fondo de tela de lino blanco impecable" itemprop="name" />
+<meta content="Seamless white canvas" itemprop="caption" />
+<meta content="https://media.istockphoto.com/photos/seamless-white-linen-canvas-background-picture-id879838070?s=2048x2048" itemprop="thumbnailUrl" />
+<meta content="https://media.istockphoto.com/photos/seamless-white-linen-canvas-background-picture-id879838070?s=2048x2048" itemprop="contentUrl" />
+</div>
+<h1 style="margin-bottom:10px; margin-top:20px; font-size:20px">
+Foto de Fondo de tela de lino blanco impecable
+</h1>
+<p>Imagen Disponible en Alta Resolución, Descarga inmediata</p>
+<p>
+small: 635 x 553 Pixels,
+medium: 1099 x 957 Pixels,
+large: 1858 x 1618 Pixels,
+ x_large: 3384 x 2948 Pixels,
+xx_large: 5500 x 4791 Pixels,
+</p>
+<div class="row">
+<div class="container" style="text-align: center; max-width:800px">
+<h3 style="margin-top:10px; font-size:12px;">
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=material">Material </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=vacio">Vacío </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=fondo-blanco">Fondo blanco </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=fila-arreglo">Fila - Arreglo </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=diseno-natural">Diseño natural </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=entrecruzado">Entrecruzado </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=fibra">Fibra </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=lona-textil">Lona - Textil </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=cuadricula">Cuadrícula </a> -
+
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=arpillera">Arpillera </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=primer-plano">Primer plano </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=tejido-textil">Tejido - Textil </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=plano-descripcion-fisica">Plano - Descripción física </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=con-textura">Con textura </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=elementos-en-bucle">Elementos en bucle </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=limpio">Limpio </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=fondos">Fondos </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=tosco">Tosco </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=negocios-finanzas-e-industria">Negocios Finanzas e Industria </a> -
+ <a href="https://www.freejpg.com.ar/imagenes/premium?q=saco-bolsa">Saco - Bolsa </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=saco-de-arpillera">Saco de arpillera </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=republica-checa">República Checa </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=horizontal">Horizontal </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=industria-textil">Industria Textil </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=desigual-tosco">Desigual - Tosco </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=fotografia-imagenes">Fotografía - Imágenes </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=textil">Textil </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=canamo">Cáñamo </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=diseno-descripciones">Diseño - Descripciones </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=algodon-textil">Algodón - Textil </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=gris">Gris </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=cordel">Cordel </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=lino-textil">Lino - Textil </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=desigual-con-textura">Desigual - Con textura </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=efecto-texturado">Efecto texturado </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=nivel-de-superficie">Nivel de superficie </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=en-blanco">En blanco </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=cuadrado-forma-bidimensional">Cuadrado - Forma bidimensional </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=hilo-merceria">Hilo - Mercería </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=motivo-repetido">Motivo repetido </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=rayado-diseno">Rayado - Diseño </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=blanco-color">Blanco - Color </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=trenza">Trenza </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=sin-personas">Sin personas </a> -
+<a href="https://www.freejpg.com.ar/imagenes/premium?q=espacio-en-blanco">Espacio en blanco </a> -
+</h3>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<p>
+<a rel="nofollow" target="_blank" href="https://istockphoto.7eer.net/c/1328319/258824/4205?u=https://www.istockphoto.com/photo/seamless-white-linen-canvas-background-gm879838070-245198989" style="text-align:center; padding: 12px 30px;
+font-size: 18px;border-color: #007FFF;background-color: #007FFF;color: #FFF;display: inline-block;border-width: 2px;border-style: solid;line-height: 1.6;
+cursor: pointer;text-align: center;text-decoration: none;border-radius: 8px;">
+<i class="fa fa-download"></i> EXCLUSIVE 15% OFF<br />
+Código promocional: <strong>FREEJPG15</strong>
+</a></p>
+<div style="height: 250px;" class="adsbyvli" data-ad-slot="outstream"></div> <script> vitag.outStreamConfig = { type: "slider", position: "right" }; </script>
+<hr />
+<a target="_blank" rel="nofollow" href="https://tracking.depositphotos.com/aff_c?offer_id=4&amp;aff_id=33083&amp;aff_sub=freejpg&amp;source=freejpg&amp;url=https%3A%2F%2Fdepositphotos.com%2Fstock-photos%2FFondo-de-tela-de-lino.html%3Futm_medium%3Daffiliate%26utm_source%3Dwidget%26utm_campaign%3Dsp.depositphotos.com%26utm_term%3D4%26utm_content%3D33083"><img src="depo.jpg" style="width:100%" /></a>
+<hr />
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7282071158808532" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7282071158808532" data-ad-slot="2843242145" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<br clear="all" />
+
+<div class="row" style="border-top:1px solid #f1f1f1; margin-top:20px;">
+<div class="rownew33" id="grid">
+</div>
+</div>
+<div class="container-fluid" style="background-color:#e2e2e2; padding-left:15px; padding-right:15px; padding-bottom:15px; margin-top:20px;">
+<h3 style="margin-top:10px; margin-bottom:10px; color:#333; font-size:20px;">Premium Imágenes de / iStock</h3>
+<div class="row">
+<div class="col-md-12">
+<div id="shutterdiv">
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+											.licencia {
+												background-color:#6C3;
+												padding:10px;
+												font-size:15px;
+												font-weight:bold;
+												margin-right:5px;
+												color:#FFF;
+											}
+											</style>
+</div>
+</div>
+</section></div>
+</section>
+<style>
+
+ul.social_wdrfree{list-style:none outside none;margin-left:0!important;padding:0;width:100%;text-align:center}ul.social_wdrfree li{display:inline;margin:0 5px}.social_wdrfree a.icoRss:hover{background-color:#f56505;color:#fff}.social_wdrfree a.icoFacebook:hover{background-color:#3b5998;color:#fff}.social_wdrfree a.icoTwitter:hover{background-color:#3cf;color:#fff}.social_wdrfree a.icoInstagram:hover{background-color:#bd3518;color:#fff}.social_wdrfree a.icoFlickr:hover{background-color:#3c3;color:#fff}.social_wdrfree li a{display:inline-block;position:relative;margin:0 auto 0 auto;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;text-align:center;width:30px;height:30px;font-size:20px}.social_wdrfree li i{margin:0;line-height:15px;text-align:center}.social_wdrfree a:hover{-moz-transform:rotate(360deg);-webkit-transform:rotate(360deg);-ms--transform:rotate(360deg);transform:rotate(360deg);-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;-ms-transition:all .2s;transition:all .2s}.social_wdrfree a{color:#20497a;-webkit-transition:all .8s;-moz-transition:all .8s;-o-transition:all .8s;-ms-transition:all .8s;transition:all .8s}.social_wdrfree li a{background:none repeat scroll 0 0 #fff}.bs-docs-footer{background-color:#000;text-align:left!important}
+
+</style>
+<footer class="bs-docs-footer" role="contentinfo">
+<div class="container" style="background-color:#000; text-align:left">
+</div>
+<style>
+
+.footer p{
+
+	color:#f1f1f1;
+
+	
+
+}
+
+</style>
+<div class="row footer" style="    width: 1280px;    max-width: 100%;     margin-right: auto;    margin-left: auto;    padding-left: 30px;
+
+    padding-right: 30px;">
+<div class="col-md-3" style="text-align:left">
+ <p style="margin-bottom:10px"><strong>Partners:</strong></p>
+<p><a href="https://photostockeditor.com" target="_blank">Photostock</a></p>
+<p><a href="https://free-stock.video" target="_blank">free-stock.video</a></p>
+<p><a href="https://blackwhite.pictures" target="_blank">blackwhite pictures</a></p>
+<p><a href="https://free-sound-effects.net" target="_blank">free-sound-effects</a></p>
+<p><a href="https://366icons.com" target="_blank">SVG ICONS</a></p>
+</div>
+<div class="col-md-3">
+<p style="margin-bottom:10px"><strong>Imágenes Destacadas</strong></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/vacas" target="_blank">Imágenes de vacas</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/toros" target="_blank">Imágenes de toros</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/drogas" target="_blank">Imágenes de drogas</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/musica" target="_blank">Imágenes de musica</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/arboles" target="_blank">Imágenes de arboles</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/familia" target="_blank">Imágenes de Familia</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/atardecer" target="_blank">Imágenes de Atardeceres</a></p>
+</div>
+<div class="col-md-3">
+<p style="margin-bottom:10px"><strong> </strong></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/playa" target="_blank">Imágenes de Playa</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/naturaleza" target="_blank">Imágenes de Naturaleza</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/flores" target="_blank">Imágenes de flores</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/soledad" target="_blank">Imágenes de soledad</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/tristeza" target="_blank">Imágenes de Tristeza</a></p>
+<p><a href="https://www.freejpg.com.ar/imagenes/gratis/fondos-de-pantalla-hd" target="_blank">Fondos de pantalla Alta Resolución</a></p>
+<p><a href="https://www.freejpg.com.ar/temas" target="_blank">Temas y Conceptos</a></p>
+</div>
+<div class="col-md-3">
+</div>
+</div>
+<div class="row" style="text-align:center">
+<div class="container" style="text-align:left">
+<p><br /></p>
+<p>Cambiar Idioma: <a href="//en.freejpg.com.ar?changelang=en">Free image Stock</a> | <a href="https://www.freejpg.com.ar?changelang=es" title="Banco de Imagenes">Banco de imágenes Gratis</a></p>
+<div style="margin-bottom:20px"></div>
+</div>
+</div>
+</footer>
+<div style="background-color:#666; padding:15px">
+<div class="container" style="display:none">
+<div class="row centered" style="background-color:#666; text-align:center">
+<div class="col-lg-6 col-lg-offset-3">
+<form id="formSubscribe" name="formSubscribe" class="form-inline" role="form" method="post" action="https://www.freejpg.com.ar/subscripcion">
+<div class="form-group">
+<input class="form-control" id="free" name="free" placeholder="Dirección de Correo" />
+<input name="email" type="hidden" value="" />
+</div>
+<button id="enviarNewsletter" class="btn btn-success btn-small">Suscribirme al Newsletter</button>
+</form>
+<p id="alertaSubscribe"></p>
+</div>
+<div class="col-lg-3"></div>
+</div>
+</div>
+</div>
+<div style="display: none;" id="contribuirModal" class="modal fade in" role="dialog" aria-hidden="false">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h2 class="text-center">Contribuir</h2>
+</div>
+<div class="modal-body">
+<p>Si sos fotográfo profesional o amateur, podés colaborar con nuestra obra. Envianos un correo a info[a]freejpg.com.ar y forma parte de nuestro colaboradores</p>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">OK</button>
+</div>
+</div>
+</div>
+</div>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+<script src="js/vendor/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/grid.js"></script>
+<script>$(".rownew33").rowGrid({itemSelector: ".item", minMargin: 10, maxMargin: 25, firstItemClass: "first-item"});</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1617553-13', 'freejpg.com.ar');
+  ga('send', 'pageview');
+
+</script> <script>
+		$('[data-toggle=tooltip]').tooltip();
+
+ 
+			$( "#votar" ).click(function(event) {
+				event.preventDefault();				 
+				var $btn=$(this);
+				                $.ajax({
+							url: "https://www.freejpg.com.ar/search/vote/",
+							context: document.body
+							}).done(function() {
+								$btn.addClass("disabled");
+							});
+			});
+			
+			
+			$( ".new_popin" ).click(function(event) {
+				event.preventDefault();				 
+					var url=$(this).attr("href");
+					window.open(url,'','toolbar=0,status=0,width=626,height=436');
+				//	return false;
+			});
+		</script>
+<script>
+$("#enviarNewsletter").click(function( event ) {
+	event.preventDefault();
+	$.ajax({
+		type: "POST", 
+		url: "https://www.freejpg.com.ar/subscripcion" ,
+		data: $( "#formSubscribe" ).serialize(),
+		success: function(data) {
+	
+				$( "#alertaSubscribe" ).html(data);
+		}
+	});
+
+});// JavaScript Document
+
+$("#enviarNewsletter2").click(function( event ) {
+	event.preventDefault();
+	$.ajax({
+		type: "POST", 
+		url: "https://www.freejpg.com.ar/subscripcion" ,
+		data: $( "#formSubscribe2" ).serialize(),
+		success: function(data) {
+				$( "#alertaSubscribe2" ).html(data);
+		}
+	});
+
+});
+</script>
+
+
+<div class="modal fade" id="modalthanks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h2 class="modal-title" id="exampleModalLabel">Descargando Imagen Gratis .....</h2>
+</div>
+<div class="modal-body">
+<h2 style="font-size:20px; color:#6CF"> si te gusta lo que hacemos en freejpg,<br /> no se olvide de seguirnos <br /><br /></h2>
+<div style="position:absolute; bottom:10px; left:20px;">
+<p style="margin-top:10px">
+<span style="height:40px;" class="st_facebook_hcount" displaytext="Facebook"></span>
+<span class="st_twitter_hcount" displaytext="Tweet"></span>
+<span class="st_pinterest_hcount" displaytext="Pinterest"></span>
+<span class="st_googleplus_hcount" displaytext="Google +"></span>
+<span class="st_tumblr_hcount" displaytext="Tumblr"></span>
+<span class="st__hcount" displaytext=""></span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+   
+   
+   			$( "#btnDownloadHD2" ).click(function(event) {
+				$('#modalthanks').modal("show");	
+				$("div#twitter_follow").removeClass("hidden");
+			});
+			
+			   			$( ".wallpaperDownload" ).click(function(event) {
+				$('#modalthanks').modal("show");	
+				$("div#twitter_follow").removeClass("hidden");
+			});
+			
+			
+			
+   $('#modalthanks').one('shown.bs.modal', function() {
+
+   	$(".twitter-follow-button").addClass("twittervisible");
+});
+   
+   
+   $('#shutterdiv').load("https://www.freejpg.com.ar/istocksim/879838070?s=1", function(responseTxt, statusTxt, xhr){
+        if(statusTxt == "success")
+            $(".rownew34").rowGrid({itemSelector: ".item2", minMargin: 10, maxMargin: 25, firstItemClass: "first-item2"});
+    });
+   
+   </script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-588121c39d39b974"></script>
+<script type='text/javascript' style='display:none;' async>
+</script>
+<script type="text/javascript" data-cfasync="false"></script></body></html>

@@ -1,0 +1,98 @@
+
+$colorfondo: rgb(251, 254, 249);
+$colortitulo: rgb(194, 193, 160);
+$colorletracuerpo: rgb(178, 167, 152);
+$coloricon: rgb(204, 182, 155);
+$letraheader: white;
+$iconhover: rgb(81, 152, 114);
+
+
+$font: 'Nanum Myeongjo', sans-serif;
+
+@import "index";
+@import "sobremi";
+@import "clientas";
+@import "diseños";
+@import "contacto";
+
+
+.bodygeneral{
+    background-color: $colorfondo;
+    
+}
+
+.header{
+    background-image: url(https://cdn0.casamientos.com.ar/vendor/3903/3_2/960/jpg/decomaguimanu-38_7_163903-165013620819245.jpeg);
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    display: flex;
+    box-shadow: 10px 14px 37px 0px rgba(46,40,40,0.54);
+    -webkit-box-shadow: 10px 14px 37px 0px rgba(46,40,40,0.54);
+    -moz-box-shadow: 10px 14px 37px 0px rgba(46,40,40,0.54);
+   
+    top:0;
+    width: 100%; 
+
+    .navbar-custom{
+        color: $letraheader;        
+        font-family: $font;
+        font-style:italic 
+    }
+
+}
+
+.redes{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    transition: height 2s, width 1s; 
+}
+.redes:hover {
+    height: 30%; width: 15%; font-size: 45px;
+}
+
+.icon{
+    color: $coloricon;
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon:hover{
+    color: $iconhover
+}
+.icon-instagram{
+    @extend.icon;
+    background: white;
+}
+.icon-facebook{
+    @extend.icon;
+    background: white;
+}
+.icon-mail{
+    @extend.icon;
+    background: white;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+.btn{
+    color: $colortitulo;
+    font-weight: bold;
+    
+}
+.btn-light:hover {
+    background-color: $iconhover !important;
+}
+
+

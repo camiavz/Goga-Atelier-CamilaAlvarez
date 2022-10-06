@@ -1,0 +1,22 @@
+.item-sobremi{
+    width: 90px;
+}
+
+.texto-sobremi{
+    margin-left: 7%;
+    max-width: 300px;
+    max-height: 500px;
+    transition: transform .2s; 
+    
+}
+.texto-sobremi:hover{
+    border: 5px solid white;
+    transform: scale(1.1); 
+}
+@media (max-width: 1180px){ 
+    .texto-sobremi{
+        min-width: 85%;
+        min-height: 85%;
+
+    }
+  }

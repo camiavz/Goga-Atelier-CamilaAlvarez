@@ -1,0 +1,21 @@
+
+h3{
+    margin-bottom: 3%;
+    color: $colortitulo;        
+    font-family: $font;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: 3;
+}
+@keyframes aparecer{
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+h5{
+    color: $colorletracuerpo;
+    
+}

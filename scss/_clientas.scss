@@ -1,0 +1,13 @@
+.slide{
+    width: 1000px;
+    height: 600px;
+}
+@media (max-width: 820px){ 
+
+    .slide{
+        width: 800px;
+        min-width: 50%;
+        min-height: 85%;
+
+    }
+} 
